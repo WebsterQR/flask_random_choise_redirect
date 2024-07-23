@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    redirect_url = random.choice(seq=["https://icdsgroup.ru/lendgc", "https://icdsgroup.ru/bizonlend"])
+    redirect_url = random.choice(seq=["https://icdsgroup.ru/bizonlend?utm_source=biz", "https://icdsgroup.ru/lendgc?utm_source=getc"])
     return redirect(redirect_url, code=302)
 
 if __name__ == "__main__":
